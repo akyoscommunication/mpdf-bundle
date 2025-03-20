@@ -31,6 +31,5 @@
 		"psr-4" : {
 			"Akyos\\MpdfBundle\\" : "./"
 		}
-	},
-	"target-dir" : "Akyos/MpdfBundle"
+	}
 }
