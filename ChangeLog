@@ -1,3 +1,7 @@
+2025-20-03 Fork and upgrade for php 8.3 and SF 7.2 - Akyos Communication
+
+... other versions without changelog
+
 2013-05-11 v. 1.1.0 Tasmanian Fox <thisemaildoesnexist@example.com>
 
 	* The structure of a bundle is rebuilt.
@@ -7,4 +11,4 @@
 
 2012-07-20  v.1.0.0 Tasmanian Fox <thisemaildoesnexist@example.com>
 
-	* The first version on MpdfPortBundle. Installation is available only with bin/vendors. This version is only able to return an instance of \mPDF class.
+	* The first version on MpdfBundle. Installation is available only with bin/vendors. This version is only able to return an instance of \mPDF class.

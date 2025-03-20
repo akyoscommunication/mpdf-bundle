@@ -1,6 +1,6 @@
 <?php
 
-namespace TFox\MpdfPortBundle\DependencyInjection;
+namespace Akyos\MpdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -15,12 +15,12 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritDoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('t_fox_mpdf_port');
+        $treeBuilder = new TreeBuilder('akyos_mpdf');
         $rootNode = method_exists(TreeBuilder::class, 'getRootNode')
             ? $treeBuilder->getRootNode()
-            : $treeBuilder->root('t_fox_mpdf_port');
+            : $treeBuilder->root('akyos_mpdf');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

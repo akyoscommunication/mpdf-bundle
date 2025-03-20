@@ -1,6 +1,6 @@
 <?php
 
-namespace TFox\MpdfPortBundle\Service;
+namespace Akyos\MpdfBundle\Service;
 
 use Mpdf\Mpdf;
 use Mpdf\Output\Destination;
@@ -11,7 +11,7 @@ class PDFService {
     /**
      * @var string
      */
-    private $cacheDir;
+    private string $cacheDir;
 
     /**
      * MpdfService constructor.
@@ -28,16 +28,16 @@ class PDFService {
      * @return string
      * @throws \Mpdf\MpdfException
      */
-    public function generatePdf($html, $options = array())
+    public function generatePdf(string $html, array $options = []): string
     {
         $resolver = new OptionsResolver();
         $resolver
             ->setDefined(array_keys($options))
-            ->setDefaults(array(
+            ->setDefaults([
                 'mode' => 'utf-8',
                 'format' => 'A4',
                 'tempDir' => $this->cacheDir
-            ));
+            ]);
         $options = $resolver->resolve($options);
         $mpdf = new Mpdf($options);
         $mpdf->WriteHTML($html);

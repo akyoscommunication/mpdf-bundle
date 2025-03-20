@@ -1,5 +1,5 @@
 {
-	"name" : "tfox/mpdf-port-bundle",
+	"name" : "akyos/mpdf-bundle",
 	"description" : "A wrapper for mPDF class which allows to use mPDF in Symfony2 projects",
 	"type" : "symfony-bundle",
 	"authors" : [{
@@ -17,8 +17,8 @@
 	],
 	"require" : {
 		"mpdf/mpdf" : "^7.0||^8.0",
-		"symfony/framework-bundle" : ">=2.3",
-		"symfony/options-resolver": ">=2.3"
+		"symfony/framework-bundle" : ">=7.2",
+		"symfony/options-resolver": ">=7.2"
 	},
 	"require-dev" : {
 		"symfony/security-bundle" : "*",
@@ -28,14 +28,9 @@
 		"sensio/framework-extra-bundle" : "*"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"TFox\\MpdfPortBundle" : ""
+		"psr-4" : {
+			"Akyos\\MpdfBundle" : "./"
 		}
 	},
-	"target-dir" : "TFox/MpdfPortBundle",
-	"extra" : {
-		"branch-alias" : {
-			"dev-master" : "2.1-dev"
-		}
-	}
+	"target-dir" : "Akyos/MpdfBundle"
 }
