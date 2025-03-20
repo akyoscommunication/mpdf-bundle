@@ -29,7 +29,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Akyos\\MpdfBundle" : "./"
+			"Akyos\\MpdfBundle\\" : "./"
 		}
 	},
 	"target-dir" : "Akyos/MpdfBundle"
