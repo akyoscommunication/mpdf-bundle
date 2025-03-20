@@ -1,0 +1,41 @@
+{
+	"name" : "tfox/mpdf-port-bundle",
+	"description" : "A wrapper for mPDF class which allows to use mPDF in Symfony2 projects",
+	"type" : "symfony-bundle",
+	"authors" : [{
+			"name" : "Tasmanian Fox",
+			"email" : "thisemaildoesnexist@example.com"
+		}
+	],
+	"keywords" : [
+		"mPDF",
+		"PDF"
+	],
+	"homepage" : "https://bitbucket.org/tasmanianfox/mpdfportbundle",
+	"license" : [
+		"MIT"
+	],
+	"require" : {
+		"mpdf/mpdf" : "^7.0||^8.0",
+		"symfony/framework-bundle" : ">=2.3",
+		"symfony/options-resolver": ">=2.3"
+	},
+	"require-dev" : {
+		"symfony/security-bundle" : "*",
+		"symfony/yaml" : "*",
+		"symfony/class-loader" : "*",
+		"symfony/browser-kit" : "*",
+		"sensio/framework-extra-bundle" : "*"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"TFox\\MpdfPortBundle" : ""
+		}
+	},
+	"target-dir" : "TFox/MpdfPortBundle",
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "2.1-dev"
+		}
+	}
+}

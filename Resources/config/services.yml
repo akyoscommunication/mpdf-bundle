@@ -1,0 +1,9 @@
+services:
+    t_fox_mpdf_port.pdf:
+        class: TFox\MpdfPortBundle\Service\PDFService
+        arguments: ["%kernel.cache_dir%"]
+        public: true
+
+    t_fox_mpdf_port.mpdf:
+        class: TFox\MpdfPortBundle\Service\MpdfService
+        public: true
